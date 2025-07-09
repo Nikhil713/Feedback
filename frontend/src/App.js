@@ -2,7 +2,7 @@ import FeedbackForm from "./FeedBackForm/FeedBackForm";
 import FeedbackList from "./FeedBackForm/FeedBackList";
 import "./App.css";
 import { useState } from "react";
-import logo from './assets/Mercedes-Logo.png';
+import logo from "./assets/Mercedes-Logo.png";
 
 
 function App() {
@@ -21,11 +21,23 @@ function App() {
         </div>
       </header>
 
-      <div className="container">
-        <h1>Feedback Collector</h1>
-        <FeedbackForm onSubmit={handleSubmit} />
-        <FeedbackList key={refresh} />
-      </div>
+      <main className="main-content">
+        <div className="left-side-space">
+          <div className="left-side">
+            <FeedbackForm
+              onSubmit={(data) => {
+                console.log("Feedback submitted", data);
+                handleSubmit();
+              }}
+            />
+          </div>
+        </div>
+        <div className="right-side-space">
+          <div className="right-side">
+            <FeedbackList key={refresh} />
+          </div>
+        </div>
+      </main>
     </>
   );
 }

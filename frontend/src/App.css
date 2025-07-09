@@ -40,12 +40,8 @@
   margin-left: 8px;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f2f4f8;
-}
-
+/* Remove or comment out this from your existing CSS */
+/*
 .container {
   max-width: 600px;
   margin: 40px auto;
@@ -55,6 +51,83 @@ body {
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+*/
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f4f8;
+}
+
+.main-content {
+  display: flex;
+  height: calc(100vh - 64px); /* full viewport height minus header height (adjust if needed) */
+  /* padding: 2rem 4rem; */
+  gap: 2rem;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.left-side-space, .right-side-space{
+  padding: 1rem;
+  width: 50%;
+}
+
+.left-side,
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.left-side{
+  margin: 3rem;
+  padding: 0;
+  /* height: auto; */
+}
+
+.right-side {
+  /* max-width: 480px; */
+}
+
+.average-rating-container {
+  background-color: #fafafa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.average-rating {
+  font-size: 28px;
+  font-weight: bold;
+  color: #27ae60;
+  margin: 8px 0 0 0;
+}
+
+/* Optional: header height fix */
+.header {
+  height: 64px;
+}
+
+
+/* .container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: white;
+  border-top: 4px solid #0a0a0a;
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
 
 h1 {
   text-align: center;
@@ -68,10 +141,35 @@ form {
   margin-bottom: 32px;
 }
 
+
+
+.feedback-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feedback-item {
+  background-color: #fafafa;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.feedback-item p {
+  margin: 4px 0;
+}
+
+.average-rating {
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 16px;
+}
+
 textarea {
   resize: vertical;
   padding: 12px;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
@@ -96,27 +194,5 @@ button {
 
 button:hover {
   background-color: #1f6391;
-}
+}   
 
-.feedback-list {
-  list-style: none;
-  padding: 0;
-}
-
-.feedback-item {
-  background-color: #fafafa;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  padding: 16px;
-  margin-bottom: 16px;
-}
-
-.feedback-item p {
-  margin: 4px 0;
-}
-
-.average-rating {
-  font-weight: bold;
-  color: #27ae60;
-  margin-bottom: 16px;
-}
