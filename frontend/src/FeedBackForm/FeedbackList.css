@@ -1,0 +1,143 @@
+.right {
+  flex: 1;
+}
+
+.avg-box, .latest-box {
+  background-color: #fff;
+  border-radius: 8px;
+  /* padding: 16px; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.stars {
+  display: flex;
+  gap: 1px;
+  margin: 8px 0;
+}
+
+.star-svg {
+  fill: #ccc;
+}
+
+.latest-box p {
+  margin: 4px 0;
+}
+
+.avg-box-heading {
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+  font-weight: 10;
+  padding: 1.2rem;
+  background-color: rgb(245, 245, 245);
+  border: 0.5px solid #e1e4e8;
+  /* border-style: solid; */
+}
+
+.avg-box-heading h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.avg-box-heading svg {
+  color: rgb(53, 52, 52);
+}
+
+.avg-box-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.2rem;
+    border: 0.5px solid #e1e4e8;
+}
+
+.avg-box-rating{
+    font-size: 2rem;
+    font-weight: 700
+}
+
+.avg-box-rating-text{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(53, 52, 52);
+}
+
+.feedbacks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.all-feedbacks-heading{
+  display: flex;
+  align-items: center; 
+  gap: 8px;
+  font-weight: 10;
+  padding: 1.2rem;
+  background-color: rgb(245, 245, 245);
+  border: 0.5px solid #e1e4e8;
+}
+
+.all-feedbacks-heading h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.feedback-item {
+  border-radius: 8px;
+  padding: 16px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+}
+
+.feedback-item-header{
+  display: flex;
+  
+}
+
+.all-feedbacks-body{
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 20rem;
+  overflow-y: auto;
+  border: 0.5px solid #e1e4e8;
+}
+
+.rating-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0rem 0.6rem;
+  border-radius: 9999px;
+  color: white;
+  font-weight: 500;
+  gap: 4px;
+  font-size: .75rem;
+}
+
+.rating-1 { background-color: #e74c3c; }    /* red */
+.rating-2 { background-color: #e67e22; }    /* orange */
+.rating-3 { background-color: #f1c40f; }    /* yellow */
+.rating-4 { background-color: #3498db; }   /* blue */
+.rating-5 { background-color: #2ecc71;}     /* green */
+
+.rating-icon svg {
+  width: 0.65rem;
+  height: 0.65rem;
+}
+
+.rating-icon-date{
+  margin-left: 0.5rem;
+  font-size: .75rem;
+  color: #555;
+}
+
+.feedback-item-text{
+  margin: 0.5rem 0;
+  background-color: none;
+  font-size: 0.9rem;
+}
