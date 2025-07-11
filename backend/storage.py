@@ -13,3 +13,7 @@ def add_feedback(feedback: Feedback):
 
 def get_all_feedback():
     return feedback_store
+
+
+def clear_all_feedback():
+    feedback_store.clear()

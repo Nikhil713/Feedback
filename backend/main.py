@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from models import Feedback
-from storage import add_feedback, get_all_feedback
+from storage import add_feedback, get_all_feedback, clear_all_feedback
 import os
 
 app = FastAPI(title="Feedback Collector API")
@@ -28,6 +28,11 @@ def create_feedback(feedback: Feedback):
 @app.get("/feedback")
 def get_feedback():
     return get_all_feedback()
+
+@app.delete("/admin/clear-feedback")
+def clear_feedback():
+    clear_all_feedback()
+    return {"message": "All feedbacks cleared."}
 
 # ---------------------------
 #   Serve React Frontend
