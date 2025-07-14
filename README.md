@@ -41,6 +41,7 @@ npm start
 View the app at  http://localhost:8000
 						
 <img width="2394" height="1139" alt="image" src="https://github.com/user-attachments/assets/5c444bed-1f2e-45ae-b3b9-8c1ba848ffe1" />
+
 ## 🌐 Azure Deployment
 You can view the deployed application at https://feedback-portal-nikhil.azurewebsites.net/
 
