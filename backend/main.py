@@ -8,10 +8,9 @@ import os
 
 app = FastAPI(title="Feedback Collector API")
 
-# CORS for local dev or external frontend
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Set specific domains in production!
+    allow_origins=["*"], 
     allow_methods=["*"],
     allow_headers=["*"],
 )

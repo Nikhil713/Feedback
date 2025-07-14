@@ -1,11 +1,8 @@
-/* App.css */
-/* Header styles */
 .header {
   background-color: #000000;
   /* Black */
   padding: 12px 24px;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   width: auto;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
@@ -18,7 +15,6 @@
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  /* prevents breaking */
   gap: 8px;
 }
 
@@ -42,19 +38,6 @@
   margin-left: 8px;
 }
 
-/* Remove or comment out this from your existing CSS */
-/*
-.container {
-  max-width: 600px;
-  margin: 40px auto;
-  background-color: white;
-  border-top: 4px solid #0a0a0a;
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-*/
-
 body,
 html {
   height: 100%;
@@ -65,8 +48,6 @@ html {
 
 .main-content {
   display: flex;
-  /* full viewport height minus header height (adjust if needed) */
-  /* padding: 2rem 4rem; */
   background-color: white;
   box-sizing: border-box;
   flex-wrap: wrap;
@@ -75,21 +56,16 @@ html {
 
 .left-side-space,
 .right-side-space {
-  /* padding: 1rem; */
   width: 50%;
   flex: 1;
 }
 
-.left-side-space{
-  /* border-right: 1px solid #ccc;  */
-}
 .left-side,
 .right-side {
   flex: 1;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  /* padding: 24px; */
   margin: 3rem;
   background-color: #fff;
 }
@@ -98,12 +74,6 @@ html {
 .left-side {
   padding: 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  /* height: 100%; */
-}
-
-.right-side {
-  /* max-width: 480px; */
-  /* box-shadow: none; */
 }
 
 .average-rating-container {
@@ -123,21 +93,11 @@ html {
   margin: 8px 0 0 0;
 }
 
-/* Optional: header height fix */
 .header {
   height: 64px;
 }
 
 
-/* .container {
-  max-width: 600px;
-  margin: 40px auto;
-  background-color: white;
-  border-top: 4px solid #0a0a0a;
-  border-radius: 8px;
-  padding: 24px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-} */
 
 h1 {
   text-align: center;
@@ -206,7 +166,8 @@ button:hover {
   background-color: #1f6391;
 }
 
-/* Optional: make column layout on smaller screens */
+/* Media Queries */
+
 @media screen and (max-width: 768px) {
   .main-content {
     flex-direction: column;

@@ -1,7 +1,6 @@
 .feedback-form {
   display: flex;
   flex-direction: column;
-  /* gap: 12px; */
   padding: 24px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   height: 100%;
@@ -43,10 +42,9 @@
 
 .star.selected {
   color: #f39c12;
-  /* golden star */
 }
 
-.left-top-box{
+.left-top-box {
   padding: 1.5rem;
   background-color: rgb(241, 241, 241);
 
@@ -60,9 +58,6 @@
 }
 
 .share-your-exp-1 svg {
-  /* width: 24px;
-    height: 24px; */
-  /* vertical-align: middle; */
   margin-right: 8px;
   color: rgb(53, 52, 52);
 }
@@ -76,7 +71,7 @@
 
 }
 
-.left-middle-box{
+.left-middle-box {
   padding: 1.5rem;
 }
 
@@ -103,7 +98,7 @@
   transform: scale(1.1);
 }
 
-.left-bottom-box{
+.left-bottom-box {
   padding: 1.5rem;
   padding-top: 0rem;
 }
@@ -123,7 +118,7 @@ textarea {
   min-height: 120px;
 }
 
-.feedback-submit{
+.feedback-submit {
   margin-top: 1rem;
   width: 100%;
 }
@@ -138,7 +133,6 @@ button {
   cursor: pointer;
   transition: background-color 0.2s ease;
   margin-top: auto;
-  /* push to bottom if needed */
   width: 100%;
   display: flex;
   justify-content: center;
@@ -155,6 +149,7 @@ button:hover {
   margin-right: 8px;
   color: white;
 }
+
 .feedback-submit button {
   padding: 0.8rem;
   font-size: 1rem;
